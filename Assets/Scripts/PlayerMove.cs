@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEditor;
 
 public class PlayerMove : MonoBehaviour
 {
@@ -9,51 +10,35 @@ public class PlayerMove : MonoBehaviour
     SpriteRenderer spriteRenderer;
     Animator anim;
 
-    // Start is called before the first frame update
-    void Awake()
+    private void Start()
     {
-        //사용할것 초기화
         rigid = GetComponent<Rigidbody2D>();
         spriteRenderer = GetComponent<SpriteRenderer>();
         anim = GetComponent<Animator>();
-        Move();
-
-
-
+        //anim.SetBool("Pl.Run", true);
     }
+    // Start is called before the first frame update
 
     // 캐릭터 움직임
     void Update()
     {
-        
-        if (MaxSpeed > 1)
+    }
+
+    private void OnTriggerEnter2D(Collider2D col)
+    {
+        Debug.Log(col.gameObject.tag);
+
+        if (col.gameObject.tag.Equals("Enemy"))
         {
-            //캐릭터 자동이동
-            rigid.velocity = new Vector2(MaxSpeed, rigid.velocity.y);
-            anim.SetBool("Pl.Run", true);
+            //anim.SetBool("Pl.Run", false);
+            OnDamage(col.transform);
+            anim.SetBool("Pl.Attack0", true);
+
         }
-        else
-        {   // 캐릭터 정지 아직 미구현
-            MaxSpeed = 0;
-            anim.SetBool("Pl.Run", false);
-        }
+        //anim.SetBool("Pl.Attack", false);
     }
-
-    void Move()
+    void OnDamage(Transform Player)
     {
-        //캐릭터 이동속도
-
-        MaxSpeed = 30;
-
-
-
-
-    }
-
-    void FixedUpdate()
-    {
-
-
-
+        rigid.AddForce(Vector2.left * 100, ForceMode2D.Impulse);
     }
 }
