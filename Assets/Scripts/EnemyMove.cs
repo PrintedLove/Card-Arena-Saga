@@ -2,27 +2,20 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Enemy : MonoBehaviour
+public class EnemyMove : MonoBehaviour
 {
-    private CreateEnemy createEnemy;
+    Transform tr;
+    public float speed;
 
-    public void Setup(CreateEnemy createEnemy)
-    {
-
-    }
     // Start is called before the first frame update
     void Start()
     {
-        
+        tr = GetComponent<Transform>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        
-    }
-    public void OnDie()
-    {
-        createEnemy.DestroyEnemy(this);
+        tr.Translate(Vector2.left * speed * Time.deltaTime);
     }
 }
