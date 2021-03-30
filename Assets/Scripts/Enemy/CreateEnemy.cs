@@ -10,35 +10,39 @@ public class CreateEnemy : MonoBehaviour
     public float createspeed;
     private int enemycount = 0;
     public int enemymax;
+    private List<Enemy> enemyList;
+    public List<Enemy> EnemyList => enemyList; // 각 개체의 고유한 
     // Start is called before the first frame update
-    void Start()
+    private void Awake()
     {
-        StartCoroutine(Create());
+        enemyList = new List<Enemy>();
+        StartCoroutine(Create()); //생성 좀 중요한 부분 
     }
 
-    IEnumerator Create()
+    private IEnumerator Create()
     {
         while (true)
         {
-            if (enemycount == enemymax)
+            if (enemycount == enemymax) 
                 break;
+
             float r = Random.Range(limitMin.y, limitMax.y);
             Vector2 creatingPoint = new Vector2(limitMin.x, r);
 
-            Instantiate(prefabEnemy, creatingPoint, Quaternion.identity);
+            GameObject clone = Instantiate(prefabEnemy, creatingPoint, Quaternion.identity);
+            Enemy enemy = clone.GetComponent<Enemy>(); // hp를 다르게하면 각 객체마다 저장하는 ? 
+
             yield return new WaitForSeconds(createspeed);
             enemycount += 1;
 
         }
     }
-    private void OnDrawGizmos()
+
+    public void DestroyEnemy(Enemy enemy)
     {
-        Gizmos.color = Color.white;
-        Gizmos.DrawLine(limitMin, limitMax);
+        enemyList.Remove(enemy);
+        Destroy(enemy.gameObject);
     }
+    
     // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }
