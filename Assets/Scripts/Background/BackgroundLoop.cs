@@ -28,11 +28,11 @@ public class BackgroundLoop : MonoBehaviour
         int childsNeeded = (int)Mathf.Ceil(screenBounds.x * 2 / objectWidth); // int형 변수를 선언하였지만 ScreenBounds는 float형이기때문에 (int)Mathf.Ceil을 활용하여 float을 인트로 변환
         GameObject clone = Instantiate(obj) as GameObject; // 게임을 실행하는 도중에 게임오브젝트를 동적으로 생성할 수 있다.
         
-        for(int i = 0; i <= childsNeeded; i++)
+        for(int i = 0; i <= childsNeeded ; i++)
         {
             GameObject c = Instantiate(clone) as GameObject;
-            c.transform.SetParent(obj.transform);
-            c.transform.position = new Vector3(objectWidth * i, obj.transform.position.y, obj.transform.position.z);
+            c.transform.SetParent(obj.transform) ;
+            c.transform.position = new Vector3(objectWidth * i+1, obj.transform.position.y, obj.transform.position.z);
             c.name = obj.name + i;
         }
         Destroy(clone);
@@ -47,7 +47,7 @@ public class BackgroundLoop : MonoBehaviour
             GameObject firshChild = children[1].gameObject;
             GameObject lastChild = children[children.Length - 1].gameObject;
             float halfObjectWidth = lastChild.GetComponent<SpriteRenderer>().bounds.extents.x - choke;
-            if(transform.position.x + screenBounds.x > lastChild.transform.position.x + halfObjectWidth)
+            if(transform.position.x + screenBounds.x  > lastChild.transform.position.x + halfObjectWidth)
             {
                 firshChild.transform.SetAsLastSibling();
                 firshChild.transform.position = new Vector3(lastChild.transform.position.x + halfObjectWidth * 2, lastChild.transform.position.y, lastChild.transform.position.z);

@@ -23,6 +23,6 @@ public class Enemy : MonoBehaviour
     }
     public void OnDie()
     {
-        createEnemy.DestroyEnemy(this);
+        //createEnemy.DestroyEnemy(this);
     }
 }
