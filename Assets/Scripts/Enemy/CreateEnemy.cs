@@ -25,21 +25,19 @@ public class CreateEnemy : MonoBehaviour
 
     private IEnumerator Create()
     {
-        Player = GameObject.FindWithTag("Player");
+        Player = GameObject.FindWithTag("Player");  // Player Tag Find
         while (true)
         {
-            float creating_x = Player.transform.position.x;
+            float creating_x = Player.transform.position.x; // Player의 좌표 x를 while로 확인1
             //Debug.Log(creating_x);
             if (enemycount == enemymax) 
                 break;
             
             //float r = Random.Range(limitMin.y, limitMax.y);
-            Vector2 creatingPoint = new Vector2( creating_x + 200 , 0);
+            Vector2 creatingPoint = new Vector2( creating_x + 200 , 0); // creatingPoint에 좌표 저장 
 
-            GameObject cl = Instantiate(prefabEnemy, creatingPoint, Quaternion.identity);
-            cl.name = "Marine" + enemycount;
-            //GameObject clone = Instantiate(prefabEnemy, creatingPoint, Quaternion.identity);
-            //GameObject clone = Instantiate(prefabEnemy, creatingPoint, Quaternion.identity);
+            GameObject cl = Instantiate(prefabEnemy, creatingPoint, Quaternion.identity); // creatingPoing 기준으로 몬스터 소환 
+            cl.name = "Marine" + enemycount; // 소환된 몬스터이름은 Marine + 숫자 ※ 향 후 수정 필요 몬스터이름 아마 배열로 하여 저장할듯 
             //Enemy enemy = clone.GetComponent<Enemy>(); // hp를 다르게하면 각 객체마다 저장하는 ? 
 
             yield return new WaitForSeconds(createspeed);
