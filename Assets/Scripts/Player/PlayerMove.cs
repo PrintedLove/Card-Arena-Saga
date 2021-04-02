@@ -9,6 +9,7 @@ public class PlayerMove : MonoBehaviour
     Rigidbody2D rigid;
     SpriteRenderer spriteRenderer;
     Animator anim;
+    Transform trans;
 
     //[SerializeField]
     //private int damage = 1;

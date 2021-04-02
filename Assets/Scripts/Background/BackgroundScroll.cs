@@ -6,7 +6,7 @@ public class BackgroundScroll : MonoBehaviour
 {
     Material mat;
     float currentXoffset = 0; 
-    public static float speed = 0.00f; //x축으로 움직이기위한 스피드 
+    public static float speed = 0.01f; //x축으로 움직이기위한 스피드 
     // Start is called before the first frame update
     void Start()
     {
