@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class DialogueManager : MonoBehaviour
 {
-    public Text nameText;
+    public Text nameText;   //name , dialogue
     public Text DialogueText;
 
     private Queue<string> sentences;
@@ -24,11 +24,11 @@ public class DialogueManager : MonoBehaviour
 
         nameText.text = dialogue.name;
 
-        sentences.Clear();
+        sentences.Clear(); 
 
         foreach (string sentence in dialogue.sentences)
         {
-            sentences.Enqueue(sentence);
+            sentences.Enqueue(sentence); // Dialog Enqueue
         }
 
         DisplayNextSentence();
@@ -42,7 +42,7 @@ public class DialogueManager : MonoBehaviour
             return;
         }
 
-        string sentence = sentences.Dequeue();
+        string sentence = sentences.Dequeue(); // Dialog Dequeue and next sentence
         Debug.Log(sentence);
         DialogueText.text = sentence;
     }
@@ -50,6 +50,6 @@ public class DialogueManager : MonoBehaviour
 
     void EndDialogue()
     {
-        Debug.Log("End of conversation.");
+        Debug.Log("End of conversation."); 
     }
 }
