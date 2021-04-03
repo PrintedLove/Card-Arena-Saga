@@ -8,66 +8,49 @@ public class PlayerMove : MonoBehaviour
     public int MaxSpeed;
     Rigidbody2D rigid;
     SpriteRenderer spriteRenderer;
+    [SerializeField]
     Animator anim;
-    Transform trans;
-
-    //[SerializeField]
-    //private int damage = 1;
-
+    public Transform pos;
+    Collider2D col;
+    public UnityEngine.Vector2 boxSize;
+    
     private void Start()
     {
         rigid = GetComponent<Rigidbody2D>();
         spriteRenderer = GetComponent<SpriteRenderer>();
         anim = GetComponent<Animator>();
-
-        //anim.SetBool("Pl.Run", true);
+        col = GetComponent<Collider2D>();
+        anim.SetBool("Pl.Run", true);
+        
     }
-    // Start is called before the first frame update
+    
 
     // 캐릭터 움직임
     void Update()
     {
-        /*  뛰는모션 구현 */
-        rigid.velocity = new Vector2(MaxSpeed, rigid.velocity.y);
-        //Vector2 frontVec = new Vector2(rigid.position.x + (MaxSpeed * 0.5f), rigid.position.y);
-        //RaycastHit2D rayHit = Physics2D.Raycast(frontVec, Vector3.down, 1, LayerMask.GetMask("platform"));
-        /*  뛰는모션 컫 */
+        //히트박스 collider추가
+        Collider2D[] collider2Ds = Physics2D.OverlapBoxAll(pos.position, boxSize, 0);
+        
+            foreach (Collider2D collider in collider2Ds )// Collider 접촉시 애니메이션 출력.
+            {
+           
 
-        //Debug.Log(rigid.position.x); //캐릭터 좌표 로그 
+            if (collider.tag == "Enemy")
+            {
 
-        /*  포지션이 0이상이면 실질적으로 뛰지는 않는다. */
-        /*if (rigid.position.x > 0)
-        {
-            BackgroundScroll.speed = 0.1f;
-            MaxSpeed = 0;
-        }
-        else if (rigid.position.x < 0)
-        {
-            MaxSpeed = 35;
-            BackgroundScroll.speed = 0.0f;
-            //  포지션 0 컫   
-        }*/
+                anim.SetTrigger("Pl.Attack0");
+                
+            }
+                           
+            }
+        rigid.velocity = new Vector2(MaxSpeed, rigid.velocity.y); // 캐릭터 달리는 속도
     }
 
-    private void OnTriggerEnter2D(Collider2D col)
+
+     private void OnDrawGizmos() // 히트박스 색상밑 설정.
     {
-        //Debug.Log(col.gameObject.tag);
-
-        if (col.gameObject.tag.Equals("Enemy"))
-        {
-            //anim.SetBool("Pl.Run", false);
-            //OnDamage(col.transform);
-            anim.SetBool("Pl.Attack0", true);
-            //Player.Hpamount -= 10;
-            rigid.AddForce(Vector2.left * 100, ForceMode2D.Impulse);
-            //Destroy(col.gameObject);
-            //BackgroundScroll.speed = 0;
-
-        }
-        //anim.SetBool("Pl.Attack", false);
+        Gizmos.color = Color.blue;
+        Gizmos.DrawWireCube(pos.position, boxSize);
     }
-    void OnDamage(Transform Player)
-    {
-        rigid.AddForce(Vector2.left * 100, ForceMode2D.Impulse);
-    }
+    
 }
