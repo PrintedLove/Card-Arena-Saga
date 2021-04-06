@@ -12,11 +12,9 @@ public class Enemy: MonoBehaviour
     public int KnockSpeed;
     public float speed;
     Animator anim;
-    
-    
-    
-
-    
+    public int Enemy_Maxhealth = 100;
+    public int Enemy_Currenthealth;
+    public HealthBar Enemy_Healthbar;
     void Start() // 시작시 필요한것 불러오기.
     {
         
@@ -24,6 +22,8 @@ public class Enemy: MonoBehaviour
         tr = GetComponent<Transform>();
         spriteRenderer = GetComponent<SpriteRenderer>();
         capsuleCollider = GetComponent<CapsuleCollider2D>();
+        Enemy_Currenthealth = Enemy_Maxhealth;  //현재 체력을 나의 maxHealth로 저장
+        Enemy_Healthbar.SetMaxHealth(Enemy_Maxhealth); //HP를 현재 나의 최대 최력치에 저장한다.
     }
 
     
