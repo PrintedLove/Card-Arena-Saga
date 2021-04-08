@@ -9,7 +9,7 @@ public class PlayerMove : MonoBehaviour
     Rigidbody2D rigid;
     SpriteRenderer spriteRenderer;
     [SerializeField]
-    Animator anim;
+    public Animator anim;
     public Transform pos;
     Collider2D col;
     public UnityEngine.Vector2 boxSize;

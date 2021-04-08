@@ -46,7 +46,7 @@ public class Enemy: MonoBehaviour
     public void KnockBack(UnityEngine.Vector2 pos) // 튕겨나가는 함수
     {
         
-        rigid.AddForce(new UnityEngine.Vector2(30, 1) * 10, ForceMode2D.Impulse);
+        //rigid.AddForce(new UnityEngine.Vector2(30, 1) * 10, ForceMode2D.Impulse);
         
         
         
