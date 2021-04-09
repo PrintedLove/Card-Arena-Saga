@@ -8,7 +8,6 @@ public class PlayerMove : MonoBehaviour
     public int MaxSpeed;
     Rigidbody2D rigid;
     SpriteRenderer spriteRenderer;
-    [SerializeField]
     public Animator anim;
     public Transform pos;
     Collider2D col;
@@ -37,11 +36,9 @@ public class PlayerMove : MonoBehaviour
 
             if (collider.tag == "Enemy")
             {
-
                 anim.SetTrigger("Pl.Attack0");
                 
-            }
-                           
+            }      
             }
         rigid.velocity = new Vector2(MaxSpeed, rigid.velocity.y); // 캐릭터 달리는 속도
     }
