@@ -41,13 +41,18 @@ public class Enemy: MonoBehaviour
         if (collision.gameObject.CompareTag("HitBox"))
 =======
         //플레이어 만나면 튕겨나는 함수 호출
+<<<<<<< HEAD
         if (collision.gameObject.CompareTag("Player"))
 >>>>>>> parent of bc26929 (Merge pull request #9 from PrintedLove/kwangHo)
+=======
+        if (collision.gameObject.CompareTag("HitBox"))
+>>>>>>> 90bc7d4 (Enemy)
         {
-            KnockBack(collision.transform.position);
+            Invoke("KnockBack", 1f);
+            //KnockBack(collision.transform.position);
         }
-    }
 
+<<<<<<< HEAD
     public void KnockBack(UnityEngine.Vector2 pos) // 튕겨나가는 함수
     {
         
@@ -55,10 +60,12 @@ public class Enemy: MonoBehaviour
         
         
         
+=======
+>>>>>>> 90bc7d4 (Enemy)
     }
 
-    void DeActive()
+    public void KnockBack() // 튕겨나가는 함수
     {
-        gameObject.SetActive(false);
+        rigid.AddForce(new UnityEngine.Vector2(3, 1) * 10, ForceMode2D.Impulse);
     }
 }

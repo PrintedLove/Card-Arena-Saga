@@ -8,11 +8,15 @@ public class PlayerMove : MonoBehaviour
     public int MaxSpeed;
     Rigidbody2D rigid;
     SpriteRenderer spriteRenderer;
+<<<<<<< HEAD
     [SerializeField]
 <<<<<<< HEAD
     public Animator Playeranimator;
 =======
     Animator anim;
+=======
+    public Animator anim;
+>>>>>>> 90bc7d4 (Enemy)
     public Transform pos;
 >>>>>>> parent of bc26929 (Merge pull request #9 from PrintedLove/kwangHo)
     Collider2D col;
@@ -47,11 +51,9 @@ public class PlayerMove : MonoBehaviour
 
             if (collider.tag == "Enemy")
             {
-
                 anim.SetTrigger("Pl.Attack0");
                 
-            }
-                           
+            }      
             }
 >>>>>>> parent of bc26929 (Merge pull request #9 from PrintedLove/kwangHo)
         rigid.velocity = new Vector2(MaxSpeed, rigid.velocity.y); // 캐릭터 달리는 속도
