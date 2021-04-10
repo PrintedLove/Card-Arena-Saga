@@ -329,16 +329,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
-    - target: {fileID: 8665372850008418690, guid: 3abf9a08ae36e4c478139814261161cf,
-        type: 3}
-      propertyPath: m_Layer
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 8665372850008418690, guid: 3abf9a08ae36e4c478139814261161cf,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 8665372850008418692, guid: 3abf9a08ae36e4c478139814261161cf,
         type: 3}
       propertyPath: m_RootOrder
@@ -394,6 +384,7 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+<<<<<<< HEAD
     - target: {fileID: 8665372850008418697, guid: 3abf9a08ae36e4c478139814261161cf,
         type: 3}
       propertyPath: m_IsTrigger
@@ -479,6 +470,8 @@ PrefabInstance:
       propertyPath: m_TagString
       value: HitBox
       objectReference: {fileID: 0}
+=======
+>>>>>>> parent of bc26929 (Merge pull request #9 from PrintedLove/kwangHo)
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3abf9a08ae36e4c478139814261161cf, type: 3}
 --- !u!1 &1194896888 stripped
@@ -549,6 +542,7 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+<<<<<<< HEAD
     - target: {fileID: 1869688450566808323, guid: 4321371b03c9a514c89bb46fa6d2059e,
         type: 3}
       propertyPath: enemymax
@@ -565,6 +559,8 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 4448974080385766119, guid: 04f4b412c14f4e048ae36d99df8133e2,
         type: 3}
+=======
+>>>>>>> parent of bc26929 (Merge pull request #9 from PrintedLove/kwangHo)
     - target: {fileID: 1869688450566808332, guid: 4321371b03c9a514c89bb46fa6d2059e,
         type: 3}
       propertyPath: m_Name
@@ -665,6 +661,7 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 1706633585}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
 --- !u!1001 &4068091214821865261
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -769,3 +766,5 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 04f4b412c14f4e048ae36d99df8133e2, type: 3}
+=======
+>>>>>>> parent of bc26929 (Merge pull request #9 from PrintedLove/kwangHo)
