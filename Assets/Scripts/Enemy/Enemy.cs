@@ -39,14 +39,21 @@ public class Enemy: MonoBehaviour
         //히트박스 만나면 튕겨나는 함수 호출
         if (collision.gameObject.CompareTag("HitBox"))
         {
-            Invoke("KnockBack", 1f);
-            //KnockBack(collision.transform.position);
+            KnockBack(collision.transform.position);
         }
-
     }
 
-    public void KnockBack() // 튕겨나가는 함수
+    public void KnockBack(UnityEngine.Vector2 pos) // 튕겨나가는 함수
     {
-        rigid.AddForce(new UnityEngine.Vector2(3, 1) * 10, ForceMode2D.Impulse);
+        
+        rigid.AddForce(new UnityEngine.Vector2(30, 1) * 10, ForceMode2D.Impulse);
+        
+        
+        
+    }
+
+    void DeActive()
+    {
+        gameObject.SetActive(false);
     }
 }
