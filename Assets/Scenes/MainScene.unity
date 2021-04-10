@@ -342,7 +342,7 @@ PrefabInstance:
     - target: {fileID: 8665372850008418692, guid: 3abf9a08ae36e4c478139814261161cf,
         type: 3}
       propertyPath: m_RootOrder
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8665372850008418692, guid: 3abf9a08ae36e4c478139814261161cf,
         type: 3}
@@ -407,7 +407,7 @@ PrefabInstance:
     - target: {fileID: 8665372850008418699, guid: 3abf9a08ae36e4c478139814261161cf,
         type: 3}
       propertyPath: MaxSpeed
-      value: 0
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 8665372850188795840, guid: 3abf9a08ae36e4c478139814261161cf,
         type: 3}
@@ -497,7 +497,7 @@ PrefabInstance:
     - target: {fileID: 1869688450566808322, guid: 4321371b03c9a514c89bb46fa6d2059e,
         type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 1869688450566808322, guid: 4321371b03c9a514c89bb46fa6d2059e,
         type: 3}
@@ -559,6 +559,12 @@ PrefabInstance:
       propertyPath: createspeed
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1869688450566808323, guid: 4321371b03c9a514c89bb46fa6d2059e,
+        type: 3}
+      propertyPath: prefabEnemy
+      value: 
+      objectReference: {fileID: 4448974080385766119, guid: 04f4b412c14f4e048ae36d99df8133e2,
+        type: 3}
     - target: {fileID: 1869688450566808332, guid: 4321371b03c9a514c89bb46fa6d2059e,
         type: 3}
       propertyPath: m_Name
@@ -593,7 +599,7 @@ PrefabInstance:
     - target: {fileID: 3339138995862370377, guid: 42e937661f9e2ae488522bf8ec04e73a,
         type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 3339138995862370377, guid: 42e937661f9e2ae488522bf8ec04e73a,
         type: 3}
@@ -755,6 +761,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4448974080385766113, guid: 04f4b412c14f4e048ae36d99df8133e2,
+        type: 3}
+      propertyPath: KnockSpeed
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 04f4b412c14f4e048ae36d99df8133e2, type: 3}
