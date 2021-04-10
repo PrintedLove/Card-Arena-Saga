@@ -8,39 +8,24 @@ public class PlayerMove : MonoBehaviour
     public int MaxSpeed;
     Rigidbody2D rigid;
     SpriteRenderer spriteRenderer;
-<<<<<<< HEAD
-    [SerializeField]
-<<<<<<< HEAD
-    public Animator Playeranimator;
-=======
-    Animator anim;
-=======
     public Animator anim;
->>>>>>> 90bc7d4 (Enemy)
     public Transform pos;
->>>>>>> parent of bc26929 (Merge pull request #9 from PrintedLove/kwangHo)
     Collider2D col;
-    
-    public GameObject HitBox;
+    public UnityEngine.Vector2 boxSize;
     
     private void Start()
     {
         rigid = GetComponent<Rigidbody2D>();
         spriteRenderer = GetComponent<SpriteRenderer>();
-        Playeranimator = GetComponent<Animator>();
+        anim = GetComponent<Animator>();
         col = GetComponent<Collider2D>();
-        Playeranimator.SetBool("Pl.Run", true);
+        anim.SetBool("Pl.Run", true);
         
     }
-    
-    
     
 
     // 캐릭터 움직임
     void Update()
-<<<<<<< HEAD
-    {           
-=======
     {
         //히트박스 collider추가
         Collider2D[] collider2Ds = Physics2D.OverlapBoxAll(pos.position, boxSize, 0);
@@ -55,12 +40,14 @@ public class PlayerMove : MonoBehaviour
                 
             }      
             }
->>>>>>> parent of bc26929 (Merge pull request #9 from PrintedLove/kwangHo)
         rigid.velocity = new Vector2(MaxSpeed, rigid.velocity.y); // 캐릭터 달리는 속도
     }
 
 
-
-    
+     private void OnDrawGizmos() // 히트박스 색상밑 설정.
+    {
+        Gizmos.color = Color.blue;
+        Gizmos.DrawWireCube(pos.position, boxSize);
+    }
     
 }

@@ -36,32 +36,13 @@ public class Enemy: MonoBehaviour
    
     public void OnTriggerEnter2D(Collider2D collision)
     {
-<<<<<<< HEAD
-        //히트박스 만나면 튕겨나는 함수 호출
-        if (collision.gameObject.CompareTag("HitBox"))
-=======
         //플레이어 만나면 튕겨나는 함수 호출
-<<<<<<< HEAD
-        if (collision.gameObject.CompareTag("Player"))
->>>>>>> parent of bc26929 (Merge pull request #9 from PrintedLove/kwangHo)
-=======
         if (collision.gameObject.CompareTag("HitBox"))
->>>>>>> 90bc7d4 (Enemy)
         {
             Invoke("KnockBack", 1f);
             //KnockBack(collision.transform.position);
         }
 
-<<<<<<< HEAD
-    public void KnockBack(UnityEngine.Vector2 pos) // 튕겨나가는 함수
-    {
-        
-        rigid.AddForce(new UnityEngine.Vector2(30, 1) * 10, ForceMode2D.Impulse);
-        
-        
-        
-=======
->>>>>>> 90bc7d4 (Enemy)
     }
 
     public void KnockBack() // 튕겨나가는 함수
