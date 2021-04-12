@@ -5,7 +5,6 @@ TagManager:
   serializedVersion: 2
   tags:
   - Enemy
-  - HitBox
   layers:
   - Default
   - TransparentFX
@@ -48,4 +47,7 @@ TagManager:
     locked: 0
   - name: Floor
     uniqueID: 3842995229
+    locked: 0
+  - name: UI
+    uniqueID: 1027687473
     locked: 0

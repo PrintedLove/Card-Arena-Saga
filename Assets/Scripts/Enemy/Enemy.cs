@@ -36,7 +36,7 @@ public class Enemy: MonoBehaviour
    
     public void OnTriggerEnter2D(Collider2D collision)
     {
-        //히트박스 만나면 튕겨나는 함수 호출
+        //플레이어 만나면 튕겨나는 함수 호출
         if (collision.gameObject.CompareTag("HitBox"))
         {
             KnockBack(collision.transform.position);
