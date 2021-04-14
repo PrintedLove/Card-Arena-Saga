@@ -33,20 +33,4 @@ public class Enemy: MonoBehaviour
         
         tr.Translate(UnityEngine.Vector2.left * speed * Time.deltaTime); //적 왼쪽으로 이동
     }
-   
-    public void OnTriggerEnter2D(Collider2D collision)
-    {
-        //플레이어 만나면 튕겨나는 함수 호출
-        if (collision.gameObject.CompareTag("HitBox"))
-        {
-            Invoke("KnockBack", 1f);
-            //KnockBack(collision.transform.position);
-        }
-
-    }
-
-    public void KnockBack() // 튕겨나가는 함수
-    {
-        rigid.AddForce(new UnityEngine.Vector2(3, 1) * 10, ForceMode2D.Impulse);
-    }
 }
