@@ -6,10 +6,12 @@ public class PlayerAnim : MonoBehaviour
 {
     PlayerMove player;
     Animator Animator;
+    Enemy enemy;
     
     void Start()
     {
         player = GetComponent<PlayerMove>();//PlayerMove 불러오기
+        enemy = GetComponent<Enemy>();
     }
 
     
@@ -24,6 +26,7 @@ public class PlayerAnim : MonoBehaviour
         {
             
             player.Playeranimator.SetTrigger("Pl.Attack0");
+            
             
         }
     }
