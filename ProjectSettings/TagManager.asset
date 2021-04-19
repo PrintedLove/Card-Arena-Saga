@@ -5,6 +5,8 @@ TagManager:
   serializedVersion: 2
   tags:
   - Enemy
+  - Enemy_Dish
+  - HitBox
   layers:
   - Default
   - TransparentFX
@@ -17,7 +19,7 @@ TagManager:
   - Enemy
   - HitBox
   - Player
-  - Player1
+  - Enemy_Dish
   - 
   - 
   - 
