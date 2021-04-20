@@ -524,11 +524,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 556c57bec434b954babba17ac7dfa85d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Enemy_Dish_rigid: {fileID: 0}
+  Enemy_Dish_rigid: {fileID: 3322456690843264102}
   PlayerLayers:
     serializedVersion: 2
-    m_Bits: 0
-  Enemy_Dish_AttackPoint: {fileID: 0}
+    m_Bits: 1024
+  Enemy_Dish_AttackPoint: {fileID: 3322456689398745588}
   Enemy_Dish_attackRange: 15
 --- !u!1 &3322456691188532139
 GameObject:

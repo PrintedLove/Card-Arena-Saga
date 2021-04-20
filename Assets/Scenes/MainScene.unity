@@ -121,23 +121,11 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!50 &298234159 stripped
-Rigidbody2D:
-  m_CorrespondingSourceObject: {fileID: 3322456690843264102, guid: ccf7b7a0cb2aaed4496cd08348f2dadc,
-    type: 3}
-  m_PrefabInstance: {fileID: 2007907418}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &730272444 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3339138996025942960, guid: 42e937661f9e2ae488522bf8ec04e73a,
     type: 3}
   m_PrefabInstance: {fileID: 1706633585}
-  m_PrefabAsset: {fileID: 0}
---- !u!4 &958318606 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 3322456689398745588, guid: ccf7b7a0cb2aaed4496cd08348f2dadc,
-    type: 3}
-  m_PrefabInstance: {fileID: 2007907418}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1010494659
 PrefabInstance:
@@ -316,17 +304,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1869688450566808323, guid: 4321371b03c9a514c89bb46fa6d2059e,
-        type: 3}
-      propertyPath: enemymax
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1869688450566808323, guid: 4321371b03c9a514c89bb46fa6d2059e,
-        type: 3}
-      propertyPath: prefabEnemy
-      value: 
-      objectReference: {fileID: 3322456690843264156, guid: ccf7b7a0cb2aaed4496cd08348f2dadc,
-        type: 3}
     - target: {fileID: 1869688450566808332, guid: 4321371b03c9a514c89bb46fa6d2059e,
         type: 3}
       propertyPath: m_Name
@@ -422,11 +399,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 3111585038601937088, guid: 2f0b27ba1061fec48990a4c322b10796,
-        type: 3}
-      propertyPath: menuSet
-      value: 
-      objectReference: {fileID: 0}
     - target: {fileID: 3111585038601937089, guid: 2f0b27ba1061fec48990a4c322b10796,
         type: 3}
       propertyPath: m_RootOrder
@@ -567,21 +539,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3322456690843264155, guid: ccf7b7a0cb2aaed4496cd08348f2dadc,
-        type: 3}
-      propertyPath: Enemy_Dish_rigid
-      value: 
-      objectReference: {fileID: 298234159}
-    - target: {fileID: 3322456690843264155, guid: ccf7b7a0cb2aaed4496cd08348f2dadc,
-        type: 3}
-      propertyPath: PlayerLayers.m_Bits
-      value: 1024
-      objectReference: {fileID: 0}
-    - target: {fileID: 3322456690843264155, guid: ccf7b7a0cb2aaed4496cd08348f2dadc,
-        type: 3}
-      propertyPath: Enemy_Dish_AttackPoint
-      value: 
-      objectReference: {fileID: 958318606}
     - target: {fileID: 3322456690843264156, guid: ccf7b7a0cb2aaed4496cd08348f2dadc,
         type: 3}
       propertyPath: m_Name
@@ -661,11 +618,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6804883866314249727, guid: 6d1f33de4fe2c0f4dbf9aaabd53637a7,
-        type: 3}
-      propertyPath: m_Camera
-      value: 
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6d1f33de4fe2c0f4dbf9aaabd53637a7, type: 3}
