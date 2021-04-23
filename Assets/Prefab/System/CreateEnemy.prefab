@@ -43,7 +43,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8c1129bd9b8c9994a967494d2468f1e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  prefabEnemy: {fileID: 2981323167090707511, guid: 04f4b412c14f4e048ae36d99df8133e2,
+  prefabEnemy: {fileID: 3322456690843264156, guid: ccf7b7a0cb2aaed4496cd08348f2dadc,
     type: 3}
   createspeed: 5
-  enemymax: 2
+  enemymax: 0
