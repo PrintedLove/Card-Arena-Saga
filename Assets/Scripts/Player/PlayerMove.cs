@@ -5,26 +5,27 @@ using UnityEditor;
 
 public class PlayerMove : MonoBehaviour
 {
-    public int MaxSpeed;
+    private int MaxSpeed = 30;
     Rigidbody2D rigid;
-    SpriteRenderer spriteRenderer;
-    [SerializeField]
+    //SpriteRenderer spriteRenderer;
     public Animator Playeranimator;
-    Collider2D col;
     
     public GameObject HitBox;
     
     private void Start()
     {
         rigid = GetComponent<Rigidbody2D>();
-        spriteRenderer = GetComponent<SpriteRenderer>();
-        Playeranimator = GetComponent<Animator>();
-        col = GetComponent<Collider2D>();
         Playeranimator.SetBool("Pl.Run", true);
         
     }
     
     
+    public void Player_KnockBack()
+    {
+        MaxSpeed = 0;
+        rigid.AddForce(new UnityEngine.Vector2(-3, 0) * 30, ForceMode2D.Impulse);
+        Invoke("Maxspeed_Setting", 0.5f);
+    }
     
 
     // 캐릭터 움직임
@@ -32,9 +33,10 @@ public class PlayerMove : MonoBehaviour
     {           
         rigid.velocity = new Vector2(MaxSpeed, rigid.velocity.y); // 캐릭터 달리는 속도
     }
-
-
-
     
-    
+    public void Maxspeed_Setting()
+    {
+        MaxSpeed = 30;
+    }
+
 }
