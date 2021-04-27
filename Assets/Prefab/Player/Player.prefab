@@ -1027,7 +1027,7 @@ MonoBehaviour:
   Player_Maxhealth: 100
   Player_Currenthealth: 0
   Player_HealthBar: {fileID: 805749282498724863}
-  Player_DamageDisplay: {fileID: 4600875885997206779, guid: 04a7ce8e710864b41bd9fb4b2687d84d,
+  Player_DamageDisplay: {fileID: 6993066213816801186, guid: 04a7ce8e710864b41bd9fb4b2687d84d,
     type: 3}
 --- !u!114 &805749283695449965
 MonoBehaviour:
