@@ -18,6 +18,7 @@ public class Enemy_Dish_Combat : MonoBehaviour
         Enemy_Dish_rigid = GetComponent<Rigidbody2D>(); //rigid변수에 Rigidbody2D를 저장 
         Enemy_Dish_animator = GetComponent<Animator>();
     }
+
     void Update() 
     {
         Enemy_Dish_Attack_Ani();
@@ -33,10 +34,8 @@ public class Enemy_Dish_Combat : MonoBehaviour
             {
                 if (Enemy_Dish_flag) 
                 { 
-                    Enemy_Dish_flag = false; //bool을 이용하여 한번만 실행 하게끔 만든다 
+                    Enemy_Dish_flag = false; //bool을 이용하여 공격이 끝나는 시점을 저장
                     Attack_Ani(); // 공격 모션 (player라는 Collider2D 매개변수를 전달 )
-                    //Invoke("KnockBack", 1f); //1초 뒤 KnockBack 함수 호출 
-                    Invoke("Enemy_Dish_Flag_True", 2f); // 2초 뒤 Flag_False 함수 호출 
                 }
             }
         }   
@@ -47,7 +46,7 @@ public class Enemy_Dish_Combat : MonoBehaviour
 
         foreach (Collider2D player in HitPlayers)
         {
-            player.GetComponent<Player>().TakeDamage();
+            player.GetComponent<Player>().Player_TakeDamage();
         }
     }
     private void  OnDrawGizmosSelected() //AttackPoint를 눈으로 보기위해 쓴 함수 
@@ -55,14 +54,18 @@ public class Enemy_Dish_Combat : MonoBehaviour
         Gizmos.DrawWireSphere(Enemy_Dish_AttackPoint.position, Enemy_Dish_attackRange);
     }
 
-    private void Attack_Ani() //공격 애니메이션 함수 매개변수는 Collider2D 로 받는다 그 변수이름은 player
+    private void Attack_Ani() //공격 애니메이션 함수
     {
         Enemy_Dish_animator.SetTrigger("Attack");
     }
-    private void KnockBack() // 튕겨나가는 함수
+    private void Player_KnockBack() // 튕겨나가는 함수
     {
+        Collider2D[] HitPlayers = Physics2D.OverlapCircleAll(Enemy_Dish_AttackPoint.position, Enemy_Dish_attackRange, PlayerLayers); // Enemy Attack_Point쪽에 닿는 모든것들을 수집 
 
-        Enemy_Dish_rigid.AddForce(new UnityEngine.Vector2(3, 0) * 40, ForceMode2D.Impulse);
+        foreach (Collider2D player in HitPlayers)
+        {
+            player.GetComponent<PlayerMove>().Player_KnockBack();
+        }
     }
 
     private void Enemy_Dish_Flag_True() // falg 변수 true로 변경 

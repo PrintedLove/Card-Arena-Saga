@@ -16,11 +16,11 @@ public class Player : MonoBehaviour
         Player_HealthBar.SetMaxHealth(Player_Maxhealth); //HP를 현재 나의 최대 최력치에 저장한다.
     }
 
-    public void TakeDamage() //대미지를 입을 함수 
+    public void Player_TakeDamage() //대미지를 입을 함수 
     {
         Player_Currenthealth -= Enemy_Dish_Combat.Enemy_Dish_Damage; // 현재체력을 damage 매개변수를 받아 그만큼 감소 
         Player_HealthBar.SetHealth(Player_Currenthealth); // 감소한피를 적용 
-
+        
         GameObject Player_Display = Instantiate(Player_DamageDisplay, transform.position, Quaternion.identity);
         Player_Display.transform.GetChild(0).GetComponent<TextMesh>().text = Enemy_Dish_Combat.Enemy_Dish_Damage.ToString();
 
@@ -29,11 +29,12 @@ public class Player : MonoBehaviour
             Die();
         }
     }
-
     private void Die() //test 쓸모없음
     {
         Debug.Log("Player died");
 
     }
+
+    
    
 }
