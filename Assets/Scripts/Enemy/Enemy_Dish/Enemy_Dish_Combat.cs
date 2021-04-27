@@ -16,7 +16,7 @@ public class Enemy_Dish_Combat : MonoBehaviour
     private void Start() //초기 설정 
     {
         Enemy_Dish_rigid = GetComponent<Rigidbody2D>(); //rigid변수에 Rigidbody2D를 저장 
-        Enemy_Dish_animator = GetComponent<Animator>();
+        Enemy_Dish_animator = GetComponent<Animator>(); //animator변수에 애니메이터 저장
     }
 
     void Update() 
@@ -30,7 +30,7 @@ public class Enemy_Dish_Combat : MonoBehaviour
 
         foreach (Collider2D player in HitPlayers) // 모든 배열을 foreach로 돌림 
         {
-            if (player.name == "Player") // 배열중 이름이 Player가 있으면 아래 실행 
+            if (player.name == "Player_Warrior") // 배열중 이름이 Player가 있으면 아래 실행 
             {
                 if (Enemy_Dish_flag) 
                 { 
@@ -68,7 +68,7 @@ public class Enemy_Dish_Combat : MonoBehaviour
         }
     }
 
-    private void Enemy_Dish_Flag_True() // falg 변수 true로 변경 
+    private void Enemy_Dish_Flag_True() // flag 변수 true로 변경 
     {
         Enemy_Dish_flag = true;
     }
