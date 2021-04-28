@@ -10,7 +10,7 @@ public class PlayerMove : MonoBehaviour
     //SpriteRenderer spriteRenderer;
     public Animator Playeranimator;
     
-    public GameObject HitBox;
+    
     
     private void Start()
     {

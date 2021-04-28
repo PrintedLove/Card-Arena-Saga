@@ -453,6 +453,8 @@ MonoBehaviour:
   Enemy_Dish_Maxhealth: 100
   Enemy_Dish_Currenthealth: 0
   Enemy_Dish_Healthbar: {fileID: 5695975245001654206}
+  Enemy_Damage_Display: {fileID: 1560436719161479787, guid: e8ec9dac3784bad4095ee38c5c2d66fd,
+    type: 3}
 --- !u!95 &5695975245885583171
 Animator:
   serializedVersion: 3
