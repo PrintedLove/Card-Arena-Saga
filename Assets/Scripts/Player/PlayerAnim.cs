@@ -10,7 +10,7 @@ public class PlayerAnim : MonoBehaviour
     public Transform Player_Warrior_FindEnemy; // Transform 위치 변수 선언 ,Player_Warrior(PlayerAnim)에 Transform 추가
     Animator Player_Warrior_Anim; // Animator 변수 선언, 플레이어의 애니메이터를 사용하기위해 추가
 
-    public static int Player_Warrior_Damaged = 3; // Player_Warrior 기본공격력
+    public static int Player_Warrior_Damaged = 20; // Player_Warrior 기본공격력
     private bool Player_Warrior_Limit = true; // 무한공격 제한
     public float Player_Warrior_HitBox = 9f; // 히트박스 크기 지정
     
