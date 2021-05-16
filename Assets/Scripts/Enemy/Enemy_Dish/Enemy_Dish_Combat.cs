@@ -13,7 +13,7 @@ public class Enemy_Dish_Combat : MonoBehaviour
 
     public float Enemy_Dish_attackRange = 15f; //몬스터의 공격 범위
     private bool Enemy_Dish_flag = true; // Update에서 무한 실행을 하지 않기위해 bool선언 
-    public static int Enemy_Dish_Damage = 5; //몬스터의 대미지 변수 
+    public static int Enemy_Dish_Damage = 25; //몬스터의 대미지 변수 
 
     private void Start() //초기 설정 
     {

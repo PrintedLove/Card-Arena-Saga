@@ -6,7 +6,6 @@ public class Enemy_Dish: MonoBehaviour
 {
     
     Transform Enemy_Dish_tr;
-    SpriteRenderer spriteRenderer;
     //Rigidbody2D rigid;
     //CapsuleCollider2D capsuleCollider;
     //public int KnockSpeed;
