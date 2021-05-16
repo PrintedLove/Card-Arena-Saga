@@ -20,10 +20,10 @@ public class PlayerMove : MonoBehaviour
     }
     
     
-    public void Player_KnockBack()
+    public void Player_KnockBack() //플레이어 넉백
     {
         MaxSpeed = 0;
-        rigid.AddForce(new UnityEngine.Vector2(-3, 0) * 30, ForceMode2D.Impulse);
+        rigid.AddForce(new Vector2(-3, 0) * 30, ForceMode2D.Impulse);
         Invoke("Maxspeed_Setting", 0.5f);
     }
     

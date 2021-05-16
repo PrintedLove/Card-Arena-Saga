@@ -8,15 +8,19 @@ public class Enemy_Dish_Combat : MonoBehaviour
     public Rigidbody2D Enemy_Dish_rigid; //넉백을 시키기 위해 필요한 변수
     public LayerMask PlayerLayers; // 어떤 객체가 적이며 여기 레이어에 모든 환경의 물체감지하기 위해 변수 생성 
     public Transform Enemy_Dish_AttackPoint; //몬스터의 공격 포인트 단지 그점을 참조 
+    private SpriteRenderer spriteRenderer;
+    private Collider2D DeadCollider;
 
     public float Enemy_Dish_attackRange = 15f; //몬스터의 공격 범위
     private bool Enemy_Dish_flag = true; // Update에서 무한 실행을 하지 않기위해 bool선언 
-    public static int Enemy_Dish_Damage = 5; //몬스터의 대미지 변수 
+    public static int Enemy_Dish_Damage = 25; //몬스터의 대미지 변수 
 
     private void Start() //초기 설정 
     {
         Enemy_Dish_rigid = GetComponent<Rigidbody2D>(); //rigid변수에 Rigidbody2D를 저장 
         Enemy_Dish_animator = GetComponent<Animator>(); //animator변수에 애니메이터 저장
+        spriteRenderer = GetComponent<SpriteRenderer>();
+        DeadCollider = GetComponent<Collider2D>();
     }
 
     void Update() 
@@ -72,4 +76,6 @@ public class Enemy_Dish_Combat : MonoBehaviour
     {
         Enemy_Dish_flag = true;
     }
+
+   
 }
