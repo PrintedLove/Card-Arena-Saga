@@ -139,7 +139,34 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1dacb020d2866bf4e99a37d932bf90cb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+<<<<<<< Updated upstream
 --- !u!1 &945788440 stripped
+=======
+  m_FirstSelected: {fileID: 0}
+  m_sendNavigationEvents: 1
+  m_DragThreshold: 10
+--- !u!4 &66630192
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 66630189}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &170564552 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6804883867031289477, guid: 6d1f33de4fe2c0f4dbf9aaabd53637a7,
+    type: 3}
+  m_PrefabInstance: {fileID: 1323237484823737396}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &179155835 stripped
+>>>>>>> Stashed changes
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6015236295033326981, guid: 42e937661f9e2ae488522bf8ec04e73a,
     type: 3}
@@ -164,7 +191,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+<<<<<<< Updated upstream
     - target: {fileID: 1869688450566808322, guid: 4321371b03c9a514c89bb46fa6d2059e,
+=======
+    - target: {fileID: 8163473935180933105, guid: 5414094a2f3f4434392e2272d2e67ec8,
+>>>>>>> Stashed changes
         type: 3}
       propertyPath: m_RootOrder
       value: 6
@@ -219,7 +250,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+<<<<<<< Updated upstream
     - target: {fileID: 1869688450566808323, guid: 4321371b03c9a514c89bb46fa6d2059e,
+=======
+    - target: {fileID: 8163473935180933118, guid: 5414094a2f3f4434392e2272d2e67ec8,
+        type: 3}
+      propertyPath: m_Name
+      value: Player_Warrior
+      objectReference: {fileID: 0}
+    - target: {fileID: 8163473935352866106, guid: 5414094a2f3f4434392e2272d2e67ec8,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8163473935352866106, guid: 5414094a2f3f4434392e2272d2e67ec8,
+>>>>>>> Stashed changes
         type: 3}
       propertyPath: enemymax
       value: 0
@@ -326,10 +371,16 @@ PrefabInstance:
       propertyPath: m_SortingOrder
       value: -4
       objectReference: {fileID: 0}
+<<<<<<< Updated upstream
     m_RemovedComponents:
     - {fileID: 6015236295033326979, guid: 42e937661f9e2ae488522bf8ec04e73a, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 42e937661f9e2ae488522bf8ec04e73a, type: 3}
 --- !u!1001 &1788310333
+=======
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 4321371b03c9a514c89bb46fa6d2059e, type: 3}
+--- !u!1001 &1706633585
+>>>>>>> Stashed changes
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -455,7 +506,11 @@ PrefabInstance:
         type: 3}
       propertyPath: menuSet
       value: 
+<<<<<<< Updated upstream
       objectReference: {fileID: 1433711117}
+=======
+      objectReference: {fileID: 170564552}
+>>>>>>> Stashed changes
     - target: {fileID: 3111585038601937089, guid: 2f0b27ba1061fec48990a4c322b10796,
         type: 3}
       propertyPath: m_RootOrder

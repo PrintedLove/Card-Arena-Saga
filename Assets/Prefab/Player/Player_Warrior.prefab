@@ -368,7 +368,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8163473934868981394}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+<<<<<<< Updated upstream:Assets/Prefab/Player/Player_Warrior.prefab
   m_LocalPosition: {x: 20, y: 0, z: 0}
+=======
+  m_LocalPosition: {x: 25, y: 0, z: 0}
+>>>>>>> Stashed changes:Assets/Scripts/Player/Prefab/Player/Player_Warrior.prefab
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 8163473935180933105}
@@ -616,7 +620,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1d70b363a02fd53498d69741c5c9cfea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rigid: {fileID: 0}
+  rigid: {fileID: 8163473935180933109}
   EnemyLayer:
     serializedVersion: 2
     m_Bits: 2048
