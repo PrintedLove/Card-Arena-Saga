@@ -1,37 +1,25 @@
 fileFormatVersion: 2
-guid: aab37e2196f3daf45b9f0fa6cb93de7b
+guid: e844a70ab68b6924b9b427b6f30c9eb3
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 654872462116568908
-    second: Player_Dead_9
+      213: 3107826812931667184
+    second: Cinderella_walk_0
   - first:
-      213: -5529231438030901389
-    second: Player_Dead_0
+      213: -3667285286415385821
+    second: Cinderella_walk_1
   - first:
-      213: 6218032439882275843
-    second: Player_Dead_1
+      213: 318455876103026453
+    second: Cinderella_walk_2
   - first:
-      213: 6736401122079118152
-    second: Player_Dead_2
+      213: 6007436850936901730
+    second: Cinderella_walk_3
   - first:
-      213: 4590219750869751383
-    second: Player_Dead_3
+      213: 2643656112458826386
+    second: Cinderella_walk_4
   - first:
-      213: -2893020944959379324
-    second: Player_Dead_4
-  - first:
-      213: -2475452254751660232
-    second: Player_Dead_5
-  - first:
-      213: -3398842879529287369
-    second: Player_Dead_6
-  - first:
-      213: -8014797855549102882
-    second: Player_Dead_7
-  - first:
-      213: -3367443966168862226
-    second: Player_Dead_8
+      213: -8216633730381467606
+    second: Cinderella_walk_5
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -72,10 +60,10 @@ TextureImporter:
   compressionQuality: 50
   spriteMode: 2
   spriteExtrude: 1
-  spriteMeshType: 0
+  spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 1
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -141,211 +129,127 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Player_Dead_0
+      name: Cinderella_walk_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 79
-        height: 69
-      alignment: 9
-      pivot: {x: 0.5189874, y: 0.3188406}
+        x: 29
+        y: 3
+        width: 20
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 37fee3f5d493443b0800000000000000
-      internalID: -5529231438030901389
+      spriteID: 0f4f9383508312b20800000000000000
+      internalID: 3107826812931667184
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Player_Dead_1
+      name: Cinderella_walk_1
       rect:
         serializedVersion: 2
-        x: 79
-        y: 0
-        width: 79
-        height: 69
-      alignment: 9
-      pivot: {x: 0.5189874, y: 0.3188406}
+        x: 108
+        y: 3
+        width: 20
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 30cd90d3f83ea4650800000000000000
-      internalID: 6218032439882275843
+      spriteID: 32bb13d467f2b1dc0800000000000000
+      internalID: -3667285286415385821
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Player_Dead_2
+      name: Cinderella_walk_2
       rect:
         serializedVersion: 2
-        x: 158
-        y: 0
-        width: 79
-        height: 69
-      alignment: 9
-      pivot: {x: 0.5189874, y: 0.3188406}
+        x: 187
+        y: 3
+        width: 20
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 843911a21218c7d50800000000000000
-      internalID: 6736401122079118152
+      spriteID: 517b1cb9ee16b6400800000000000000
+      internalID: 318455876103026453
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Player_Dead_3
+      name: Cinderella_walk_3
       rect:
         serializedVersion: 2
-        x: 237
-        y: 0
-        width: 79
-        height: 69
-      alignment: 9
-      pivot: {x: 0.5189874, y: 0.3188406}
+        x: 266
+        y: 3
+        width: 20
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 756d29b1b8cb3bf30800000000000000
-      internalID: 4590219750869751383
+      spriteID: 2607fa6bcf3be5350800000000000000
+      internalID: 6007436850936901730
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Player_Dead_4
+      name: Cinderella_walk_4
       rect:
         serializedVersion: 2
-        x: 316
-        y: 0
-        width: 79
-        height: 69
-      alignment: 9
-      pivot: {x: 0.5189874, y: 0.3188406}
+        x: 345
+        y: 3
+        width: 20
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4886ee747cce9d7d0800000000000000
-      internalID: -2893020944959379324
+      spriteID: 29206634a3720b420800000000000000
+      internalID: 2643656112458826386
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Player_Dead_5
+      name: Cinderella_walk_5
       rect:
         serializedVersion: 2
-        x: 395
-        y: 0
-        width: 79
-        height: 69
-      alignment: 9
-      pivot: {x: 0.5189874, y: 0.3188406}
+        x: 424
+        y: 3
+        width: 20
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 83766113a4d65add0800000000000000
-      internalID: -2475452254751660232
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Player_Dead_6
-      rect:
-        serializedVersion: 2
-        x: 474
-        y: 0
-        width: 79
-        height: 69
-      alignment: 9
-      pivot: {x: 0.5189874, y: 0.3188406}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7318a4ea862e4d0d0800000000000000
-      internalID: -3398842879529287369
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Player_Dead_7
-      rect:
-        serializedVersion: 2
-        x: 553
-        y: 0
-        width: 79
-        height: 69
-      alignment: 9
-      pivot: {x: 0.5189874, y: 0.3188406}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ed4ee6980d7b5c090800000000000000
-      internalID: -8014797855549102882
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Player_Dead_8
-      rect:
-        serializedVersion: 2
-        x: 632
-        y: 0
-        width: 79
-        height: 69
-      alignment: 9
-      pivot: {x: 0.5189874, y: 0.3188406}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ee1f873ed8f6441d0800000000000000
-      internalID: -3367443966168862226
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Player_Dead_9
-      rect:
-        serializedVersion: 2
-        x: 711
-        y: 0
-        width: 79
-        height: 69
-      alignment: 9
-      pivot: {x: 0.5189874, y: 0.3188406}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c4fb4add803961900800000000000000
-      internalID: 654872462116568908
+      spriteID: a20be13e727a8fd80800000000000000
+      internalID: -8216633730381467606
       vertices: []
       indices: 
       edges: []

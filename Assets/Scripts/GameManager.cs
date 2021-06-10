@@ -6,6 +6,19 @@ using UnityEngine.UI;
 public class GameManager : MonoBehaviour
 {
     public GameObject menuSet;
+<<<<<<< Updated upstream
+=======
+    public GameObject menuSet2;
+    public GameObject Main;
+    public GameObject ingame;
+    public GameObject SB;
+    public GameObject SS;
+    public GameObject store1;
+    public GameObject ex1;
+    public GameObject ex2;
+    public GameObject ex3;
+    public GameObject skip;
+>>>>>>> Stashed changes
 
 
     // Start is called before the first frame update
